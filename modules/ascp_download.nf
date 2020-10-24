@@ -1,12 +1,14 @@
 process ascp_download {
+container 'ibmcom/aspera-cli'
 
 input:
-tuple val(pair_id), file(reads)
+val(path)
 
 output:
+file "*.fastq.gz"
 
 script:
 """
-gunzip -f ${reads[1][0]}
+ascp -@1:20 -QT -l 300m -P33001 -i /home/aspera/.aspera/cli/etc/asperaweb_id_dsa.openssh era-fasp@fasp.sra.ebi.ac.uk:${path} .
 """
 }

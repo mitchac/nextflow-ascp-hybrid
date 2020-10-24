@@ -1,0 +1,67 @@
+earch or jump to…
+
+Pulls
+Issues
+Marketplace
+Explore
+ 
+@mitchac 
+nextflow-io
+/
+nextflow
+80
+1.2k283
+Code
+Issues
+133
+Pull requests
+18
+Actions
+Projects
+1
+Security
+More
+nextflow/.gitignore
+@pditommaso
+pditommaso Ignore **/out/* files
+Latest commit 5caea1d on Jul 31, 2019
+ History
+ 1 contributor
+36 lines (36 sloc)  403 Bytes
+ 
+.idea/**
+.gradle/**
+.*.log*
+.cache/*
+.vagrant/*
+.cache/*
+.nextflow*
+.node-nextflow*
+**/build/**
+build/**
+modules/**/build/
+modules/**/*.iml
+modules/nextflow/work/
+**/out/*
+tmp/*
+work/*
+nextflow.eml
+nextflow.iml
+Vagrantfile
+resources/*
+test/*
+tools/*
+other
+docs/_build/
+./*.txt
+cache/
+errors/
+misc/
+cloud/my-*
+docker-test
+docker/dist
+docker/nextflow
+temp
+gradle.properties
+.dockerignore
+.launch.classpath
